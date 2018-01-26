@@ -3,18 +3,17 @@
 Small Arduino library to deal with a FIFO queue (First in , First Out).
 By D. de Lorenzo.
 
-The library is rather compact but has the main functionalities of a fifo (ie: _enqueue_ and _dequeue_). I use it associated to an I2C bus receiver. The queue stores the received messages until they are processed.
+The library is rather compact but has the main functionalities of a fifo (ie: _enqueue_ and _dequeue_). Each item of the queue has 2 fields (int and string).  
+I use it associated to an I2C bus receiver: the queue stores the received messages until they are processed.
 
-You can use for insta
-
-> Example:
-> ---FxxxxL----
-> F = First item
-> L = Last item
+> Example:  
+> ---FxxxxL----  
+> F = First item  
+> L = Last item  
 
 ## Customisation
 These values can be adjusted in the .h file in order to fit your needs.
-> MAX_QUEUE_SIZE
+> MAX_QUEUE_SIZE  
 > MAX_DATA_SIZE
 
 ## API description
@@ -30,10 +29,10 @@ void ArrayQueue::enQueue(int element, char* text)
 ```
 Add a item in the FIFO queue (the Last item).  The item has two fields (*element* and *text*) .
 When MAX_QUEUE_SIZE is reached, the queue is full and the new items are ignored.
-> Examples:
-> xL---------
-> --FxxxxL---
-> xL----Fxxxx  
+> Examples:  
+> xL---------  
+> --FxxxxL---  
+> xL----Fxxxx
 
 -----
 ```c++
