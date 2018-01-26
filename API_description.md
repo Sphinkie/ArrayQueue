@@ -5,7 +5,7 @@ These values can be adjusted in the header file, in order to fit your needs.
 > MAX_QUEUE_SIZE  
 > MAX_DATA_SIZE
 
-## Customisation
+## Description
 -----
 ```c++
 ArrayQueue::ArrayQueue()
@@ -56,6 +56,6 @@ String ArrayQueue::getData(int index)
 Returns the second field of the poped item 
 
 ## Usage
-See the given file: example.ino
+See the given file: [example.ino](example.ino)
 
 Available on GitHub @Sphinkie/ArrayQueue
