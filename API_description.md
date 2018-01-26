@@ -56,6 +56,6 @@ String ArrayQueue::getData(int index)
 Returns the second field of the poped item 
 
 ## Usage
-See the given file: [example.ino](example.ino)
+See the given file: [example.ino](example/example.ino)
 
 Available on GitHub @Sphinkie/ArrayQueue
