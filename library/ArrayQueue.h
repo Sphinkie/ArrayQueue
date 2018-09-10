@@ -1,6 +1,8 @@
 #ifndef ARRAYQUEUECLASS_H_INCLUDED
 #define ARRAYQUEUECLASS_H_INCLUDED
 
+#include <Arduino.h>
+
 #define MAX_QUEUE_SIZE 15       
 #define MAX_DATA_SIZE  50        
 
